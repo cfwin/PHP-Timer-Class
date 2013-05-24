@@ -4,6 +4,7 @@ PHP-Timer
 Simple PHP script Timer
 
 Usage:
+``` php
 $timer = new Timer();
 
 // Start timer <-- COUNT
@@ -29,3 +30,4 @@ usleep(1234567);
 // Should give me 5 seconds <-- STOP
 $timer->stop();
 echo $timer->getTime();
+```
