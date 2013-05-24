@@ -79,6 +79,7 @@ class Timer {
     
     /**
      * Get the time.
+     * @return lap time to lap() function
      */
     private function getLapTime() {
         return $this->timeToString();
@@ -95,6 +96,7 @@ class Timer {
     
     /**
      * Convert the time to a readable string for display or logging.
+     * @param $seconds Seconds gathered from the `getTime` function
      * @return time in a displayable string
      */
     private function timeToString($seconds = '') {
@@ -114,6 +116,7 @@ class Timer {
     
     /**
      * Round up the microtime .5 and down .4
+     * @param $microTime Time from `timeToString` function
      * @return time rounded
      */
     private function roundMicroTime($microTime) {
