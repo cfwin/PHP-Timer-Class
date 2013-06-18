@@ -27,7 +27,12 @@ usleep(1000000);
 $timer->resume();
 usleep(1234567);
 
-// Should give me 5 seconds <-- STOP
+// <-- STOP
 $timer->stop();
 echo $timer->getTime();
+```
+
+Outputs: 
+```
+7.2406 seconds
 ```
